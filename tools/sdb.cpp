@@ -128,16 +128,16 @@ int main(int argc, const char** argv) {
       if (history_length > 0) {
         line_str = history_list()[history_length - 1]->line;
       }
+    }
 
-      else {
-        line_str = line;
-        add_history(line);
-        free(line);
-      }
+    else {
+      line_str = line;
+      add_history(line);
+      free(line);
+    }
 
-      if (!line_str.empty()) {
-        handle_command(pid, line_str);
-      }
+    if (!line_str.empty()) {
+      handle_command(pid, line_str);
     }
   }
 }
