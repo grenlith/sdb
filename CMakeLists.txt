@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
+set(CMAKE_EXPORT_COMPILER_COMMANDS TRUE)
 
 project("sdb" LANGUAGES CXX)
 
