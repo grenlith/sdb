@@ -57,6 +57,8 @@ void print_stop_reason(const sdb::process &process, sdb::stop_reason reason) {
   case sdb::process_state::stopped:
     std::cout << "stopped with signal " << sigabbrev_np(reason.info);
     break;
+  default:
+    break;
   }
 
   std::cout << std::endl;
